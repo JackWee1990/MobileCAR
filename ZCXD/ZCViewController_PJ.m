@@ -57,7 +57,8 @@
 }
 
 - (IBAction)button_pj_Click:(id)sender {
-    [self.navigationController popToRootViewControllerAnimated:true];
+    //[self.navigationController popToRootViewControllerAnimated:true];
+    [self.navigationController popViewControllerAnimated:true];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
