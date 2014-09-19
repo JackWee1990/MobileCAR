@@ -19,6 +19,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.currentDevis3_5Inch = [self is3_5Inch];
+    
+    
     [self getDataFromUserDefault];
     // Do any additional setup after loading the view.
     //[self aMapSearchConfig];
@@ -92,7 +94,9 @@
     //[self.locationManger requestAlwaysAuthorization];//ios8
     self.locationManger.desiredAccuracy = kCLLocationAccuracyBest;
     self.locationManger.distanceFilter = kCLDistanceFilterNone;
-    [self.locationManger startUpdatingLocation];
+    [self locUpdate];
+    [NSTimer scheduledTimerWithTimeInterval:60 target:self selector:@selector(locUpdate) userInfo:nil repeats:true];
+    
     
 }
 - (void)maMapConfig {
@@ -886,5 +890,9 @@
 
 - (void)mapSearchConfig{
     self.search = [[AMapSearchAPI alloc]initWithSearchKey:@"972d0eea5c006b8f06caf09eb2c8f85a" Delegate:self];
+}
+
+- (void)locUpdate{
+    [self.locationManger startUpdatingLocation];//1分钟1次 查询一次关闭
 }
 @end

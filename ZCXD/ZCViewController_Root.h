@@ -80,6 +80,8 @@
 - (void)getInfoDicFromServer;
 - (void)mapSearchConfig;//初始化AMapSearchAPI *search
 - (void)searchReGeocode;//地理位置逆向查询
+
+- (void)locUpdate;
 @end
 
 
