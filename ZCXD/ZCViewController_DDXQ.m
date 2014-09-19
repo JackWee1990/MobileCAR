@@ -288,9 +288,10 @@
             break;
         case 1://进行中
             //self.button_xd.frame = CGRectMake(<#CGFloat x#>, <#CGFloat y#>, <#CGFloat width#>, <#CGFloat height#>)
-            self.button_xd.titleLabel.text = @"订单完成";
+            //self.button_xd.titleLabel.text = @"订单完成";
+            [self.button_xd setTitle:@"订单完成" forState:UIControlStateNormal];
             self.text_bj.hidden = YES;
-            size = CGSizeMake(297, 450);
+            size = CGSizeMake(297, 500);
             self.scrollView.contentSize = size;
             break;
         case 2://已完成 －> 评价
@@ -298,7 +299,7 @@
             [self.button_xd setTitle:@"评价" forState:UIControlStateNormal];
             
             self.text_bj.hidden = YES;
-            size = CGSizeMake(297, 450);
+            size = CGSizeMake(297, 500);
             self.scrollView.contentSize = size;
             break;
         case 3://已关闭
