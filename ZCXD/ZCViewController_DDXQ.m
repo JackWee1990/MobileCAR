@@ -110,10 +110,10 @@
         //NSLog(@"333");
         ZCViewController_Root *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"ZCViewController_Root"];
         //vc.infoDic = infoDic;
-        //[self.navigationController pushViewController:vc animated:true];
+        [self.navigationController pushViewController:vc animated:true];
         //[self.navigationController popToViewController:vc animated:true];
         //[self dismissViewControllerAnimated:true completion:nil];
-        [self.navigationController popViewControllerAnimated:true];
+        //[self.navigationController popViewControllerAnimated:true];
         //[self.navigationController popToRootViewControllerAnimated:true];
     }
 }
