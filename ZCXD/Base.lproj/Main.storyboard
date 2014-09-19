@@ -1,0 +1,1009 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="jaU-fe-otG">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <scenes>
+        <!--View ControllerGRXX-->
+        <scene sceneID="f61-ej-4pJ">
+            <objects>
+                <viewController storyboardIdentifier="ZCViewController_GRXX" id="Hkg-i7-Nwp" customClass="ZCViewController_GRXX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Pda-SK-4mW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="本人手机号码（必须填）" minimumFontSize="17" id="dKZ-j5-X0y">
+                                <rect key="frame" x="25" y="84" width="271" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="本人真实姓名（必须填）" minimumFontSize="17" id="4PS-VI-VdB">
+                                <rect key="frame" x="25" y="115" width="271" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="再次输入密码（必须填）" minimumFontSize="17" id="ncM-pu-lvb">
+                                <rect key="frame" x="25" y="227" width="271" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="本人身份证号码（必须填）" minimumFontSize="17" id="3dn-vs-Y9Y">
+                                <rect key="frame" x="25" y="146" width="271" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="输入密码，5-16为（必须填）" minimumFontSize="17" id="8UY-Lf-2m2">
+                                <rect key="frame" x="25" y="196" width="271" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="IHv-pK-Hmw">
+                                <rect key="frame" x="25" y="277" width="271" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.15495115079999999" blue="0.061484574129999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="保存">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="button_save_Click:" destination="Hkg-i7-Nwp" eventType="touchUpInside" id="SZc-4E-Otg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.96999999999999997" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="button_save" destination="IHv-pK-Hmw" id="9gr-kn-f7y"/>
+                        <outlet property="tap_clear" destination="oTU-Ld-x6j" id="Kje-zK-mNI"/>
+                        <outlet property="text_mm" destination="8UY-Lf-2m2" id="jBt-PH-8jc"/>
+                        <outlet property="text_qrmm" destination="ncM-pu-lvb" id="INq-vp-z8j"/>
+                        <outlet property="text_sfzhm" destination="3dn-vs-Y9Y" id="g30-AP-cR6"/>
+                        <outlet property="text_sjhm" destination="dKZ-j5-X0y" id="UXF-DR-CYh"/>
+                        <outlet property="text_xm" destination="4PS-VI-VdB" id="ryA-Jb-ASR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AIU-Mx-s8d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="oTU-Ld-x6j">
+                    <connections>
+                        <action selector="tap_clear_Click:" destination="Hkg-i7-Nwp" id="nHZ-OF-w2S"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-5927" y="1014"/>
+        </scene>
+        <!--View ControllerCLXX-->
+        <scene sceneID="Od7-a7-bnz">
+            <objects>
+                <viewController storyboardIdentifier="ZCViewController_CLXX" id="Iey-hV-J3H" customClass="ZCViewController_CLXX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3Dc-WQ-u8B">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="货车车牌号码" minimumFontSize="17" id="H1w-Wm-46O">
+                                <rect key="frame" x="25" y="84" width="271" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="挂车车牌号码" minimumFontSize="17" id="aug-0C-tmK">
+                                <rect key="frame" x="25" y="115" width="271" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="输入车辆最大载重" minimumFontSize="17" id="2bN-g6-oBQ">
+                                <rect key="frame" x="25" y="208" width="271" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="选择车辆类型" minimumFontSize="17" id="GQ3-mg-Fhv">
+                                <rect key="frame" x="25" y="146" width="271" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="输入车辆长度" minimumFontSize="17" id="ery-26-J4h">
+                                <rect key="frame" x="25" y="177" width="271" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="giI-e1-hDh">
+                                <rect key="frame" x="25" y="267" width="271" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.15495115079999999" blue="0.061484574129999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="保存">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="button_save_Click:" destination="Iey-hV-J3H" eventType="touchUpInside" id="0ch-xk-ks4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="dnx-dz-0jK">
+                                <rect key="frame" x="271" y="148" width="25" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="downforward.png"/>
+                                <connections>
+                                    <action selector="button_showtv_Click:" destination="Iey-hV-J3H" eventType="touchUpInside" id="sqz-5V-Dhm"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="J23-wX-WPV">
+                                <rect key="frame" x="116" y="177" width="180" height="150"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="q6l-lm-Rav">
+                                        <rect key="frame" x="0.0" y="22" width="180" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="q6l-lm-Rav" id="0kL-rU-5Iy">
+                                            <rect key="frame" x="0.0" y="0.0" width="180" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.96999999999999997" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="button_save" destination="giI-e1-hDh" id="KgP-7f-3Cb"/>
+                        <outlet property="button_showtv" destination="dnx-dz-0jK" id="n4C-q4-zCo"/>
+                        <outlet property="tap_clear" destination="etH-s6-1Un" id="rAE-Fe-zpe"/>
+                        <outlet property="text_clcd" destination="ery-26-J4h" id="QHV-rN-PCp"/>
+                        <outlet property="text_cllx" destination="GQ3-mg-Fhv" id="6re-4g-g61"/>
+                        <outlet property="text_cphm" destination="H1w-Wm-46O" id="DKv-3x-38S"/>
+                        <outlet property="text_gchm" destination="aug-0C-tmK" id="4d5-SA-amr"/>
+                        <outlet property="text_zdzz" destination="2bN-g6-oBQ" id="neL-2o-J6a"/>
+                        <outlet property="tv" destination="J23-wX-WPV" id="BuA-bM-lQY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XW9-hc-UB3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="etH-s6-1Un">
+                    <connections>
+                        <action selector="tap_clear_Click:" destination="Iey-hV-J3H" id="l0z-Wp-D6j"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-5543" y="1014"/>
+        </scene>
+        <!--View ControllerWDDD-->
+        <scene sceneID="zrX-wQ-w47">
+            <objects>
+                <viewController storyboardIdentifier="ZCViewController_WDDD" id="TZS-NM-fNr" customClass="ZCViewController_WDDD" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CkI-mq-Dp6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="amZ-mi-zCy">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <barButtonItem title="全部" width="50" style="plain" id="3Ja-Ow-BmN"/>
+                                    <barButtonItem title="已报价" width="50" style="plain" id="0TG-bQ-kio"/>
+                                    <barButtonItem title="进行中" width="50" style="plain" id="Kyc-PP-gPp"/>
+                                    <barButtonItem title="已完成" width="50" style="plain" id="nzE-x6-fET"/>
+                                    <barButtonItem title="已关闭" width="50" style="plain" id="gSK-H0-M8l"/>
+                                </items>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </toolbar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="y4I-p3-1FB">
+                                <rect key="frame" x="0.0" y="58" width="320" height="466"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kWO-67-Yvr">
+                                <rect key="frame" x="17" y="523" width="50" height="2"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.15495115079999999" blue="0.061484574129999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.96999999999999997" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="barbutton_jxz" destination="Kyc-PP-gPp" id="ArB-bQ-JaS"/>
+                        <outlet property="barbutton_qb" destination="3Ja-Ow-BmN" id="7ae-l0-tIk"/>
+                        <outlet property="barbutton_ybj" destination="0TG-bQ-kio" id="hHg-LI-dLf"/>
+                        <outlet property="barbutton_ygb" destination="gSK-H0-M8l" id="mcv-9J-XJD"/>
+                        <outlet property="barbutton_ywc" destination="nzE-x6-fET" id="udR-2A-Hom"/>
+                        <outlet property="label" destination="kWO-67-Yvr" id="b85-J4-wou"/>
+                        <outlet property="toolbar" destination="amZ-mi-zCy" id="d9t-LI-ZIL"/>
+                        <outlet property="tv" destination="y4I-p3-1FB" id="EQO-Jp-0d7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IwC-S7-5kh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-5927" y="304"/>
+        </scene>
+        <!--View ControllerSZ-->
+        <scene sceneID="jUO-yA-mdk">
+            <objects>
+                <viewController storyboardIdentifier="ZCViewController_SZ" id="c5d-yD-7zR" customClass="ZCViewController_SZ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dK8-oU-X3A">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="tBm-6N-nv2">
+                                <rect key="frame" x="20" y="99" width="280" height="217"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" restorationIdentifier="cell_cfg" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationWidth="0.0" rowHeight="44" id="StX-zj-Lkl">
+                                        <rect key="frame" x="0.0" y="22" width="280" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="StX-zj-Lkl" id="oFD-5o-LZN">
+                                            <rect key="frame" x="0.0" y="0.0" width="280" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.96999999999999997" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="tv" destination="tBm-6N-nv2" id="4lV-Gx-tPh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jo8-Mv-uFj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-5133" y="1014"/>
+        </scene>
+        <!--View ControllerSZYJFK-->
+        <scene sceneID="kMq-Us-NcJ">
+            <objects>
+                <viewController storyboardIdentifier="ZCUIViewController_SZ_YJFK" id="Erv-ye-3oU" customClass="ZCUIViewController_SZ_YJFK" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ph0-OQ-fb5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="2ak-jy-iWM">
+                                <rect key="frame" x="18" y="107" width="285" height="177"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="KZd-a4-q1S">
+                                <rect key="frame" x="18" y="306" width="282" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.15495115079999999" blue="0.061484574129999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="提交">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="button_submit_Click:" destination="Erv-ye-3oU" eventType="touchUpInside" id="ij9-bU-IBp"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="欢迎提出您的宝贵意见" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Fv7-Sg-uI0">
+                                <rect key="frame" x="20" y="72" width="150" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.96999999999999997" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="button_submit" destination="KZd-a4-q1S" id="s3s-yl-Ncv"/>
+                        <outlet property="tap_clear" destination="PvM-5l-zCb" id="ZmM-6I-hMH"/>
+                        <outlet property="textView" destination="2ak-jy-iWM" id="StM-0E-7Hz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pLF-FN-AtY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="PvM-5l-zCb">
+                    <connections>
+                        <action selector="tap_clear_Click:" destination="Erv-ye-3oU" id="qHA-rd-az1"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-4668" y="1014"/>
+        </scene>
+        <!--View ControllerWDDD-->
+        <scene sceneID="S1f-k2-jNU">
+            <objects>
+                <viewController storyboardIdentifier="ZCViewController_WDDD_3_5" id="kdO-sL-gFp" customClass="ZCViewController_WDDD" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8FN-PC-Rsq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="B1x-zg-OSK">
+                                <rect key="frame" x="0.0" y="436" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <barButtonItem title="全部" width="50" style="plain" id="UMa-FP-117"/>
+                                    <barButtonItem title="已报价" width="50" style="plain" id="i3X-Ae-wkQ"/>
+                                    <barButtonItem title="进行中" width="50" style="plain" id="sbZ-xT-5ND"/>
+                                    <barButtonItem title="已完成" width="50" style="plain" id="FJP-iU-0m8"/>
+                                    <barButtonItem title="已关闭" width="50" style="plain" id="JdM-HI-0hd"/>
+                                </items>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </toolbar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="n3v-k2-1IY">
+                                <rect key="frame" x="0.0" y="60" width="320" height="376"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="grf-E9-48s">
+                                <rect key="frame" x="17" y="436" width="50" height="2"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.15495115079999999" blue="0.061484574129999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="barbutton_jxz" destination="sbZ-xT-5ND" id="By3-5v-CYF"/>
+                        <outlet property="barbutton_qb" destination="UMa-FP-117" id="13K-ak-os8"/>
+                        <outlet property="barbutton_ybj" destination="i3X-Ae-wkQ" id="cVm-DE-lA8"/>
+                        <outlet property="barbutton_ygb" destination="JdM-HI-0hd" id="0Pb-zq-NLL"/>
+                        <outlet property="barbutton_ywc" destination="FJP-iU-0m8" id="AsH-ji-htT"/>
+                        <outlet property="label" destination="grf-E9-48s" id="qQK-rN-QrP"/>
+                        <outlet property="toolbar" destination="B1x-zg-OSK" id="YaI-cg-FZD"/>
+                        <outlet property="tv" destination="n3v-k2-1IY" id="Yox-D6-uXK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Jv-aa-2Ry" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-5533" y="304"/>
+        </scene>
+        <!--View ControllerDDXQ-->
+        <scene sceneID="oLJ-AX-whM">
+            <objects>
+                <viewController storyboardIdentifier="ZCViewController_DDXQ" id="P9e-er-tOs" customClass="ZCViewController_DDXQ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HPs-GM-xBG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" id="bSM-p4-J9E">
+                                <rect key="frame" x="11" y="150" width="297" height="480"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="介绍说明" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qax-Wc-sB6">
+                                        <rect key="frame" x="10" y="6" width="68" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cJD-67-FeY">
+                                        <rect key="frame" x="4" y="36" width="288" height="3"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="0.15495115079999999" blue="0.061484574129999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Data" selectable="NO" id="7x3-ej-Ola">
+                                        <rect key="frame" x="4" y="39" width="288" height="49"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="详细信息" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Kau-st-w11">
+                                        <rect key="frame" x="10" y="94" width="68" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rUU-ru-mcC">
+                                        <rect key="frame" x="4" y="124" width="288" height="3"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="0.15495115079999999" blue="0.061484574129999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" 货车装车地点" minimumFontSize="17" id="vpJ-TE-AC7">
+                                        <rect key="frame" x="4" y="127" width="288" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" 货车卸车地点" minimumFontSize="17" id="NrC-he-eKR">
+                                        <rect key="frame" x="4" y="157" width="288" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" 提货时间" minimumFontSize="17" id="zxq-24-tzA">
+                                        <rect key="frame" x="4" y="187" width="288" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" 计划到达时间" minimumFontSize="17" id="5Tj-9o-CCv">
+                                        <rect key="frame" x="4" y="217" width="288" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" 货品名称" minimumFontSize="17" id="Emr-pU-lpj">
+                                        <rect key="frame" x="4" y="247" width="288" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" 货板（托盘/卡板）" minimumFontSize="17" id="SHF-Aw-0J8">
+                                        <rect key="frame" x="4" y="277" width="288" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" 数量" minimumFontSize="17" id="bsh-fN-2Um">
+                                        <rect key="frame" x="4" y="307" width="288" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" 总重量" minimumFontSize="17" id="6D2-Q5-bbe">
+                                        <rect key="frame" x="4" y="337" width="288" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="输入您的报价" minimumFontSize="17" id="2n8-pd-rkj">
+                                        <rect key="frame" x="4" y="393" width="182" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="cLX-LD-oVw">
+                                        <rect key="frame" x="198" y="392" width="94" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="0.15495115079999999" blue="0.061484574129999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="立即下单">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="button_xd_Click:" destination="P9e-er-tOs" eventType="touchUpInside" id="SJJ-3D-Las"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </scrollView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="WA2-s6-unZ">
+                                <rect key="frame" x="0.0" y="63" width="320" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.96999999999999997" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="button_xd" destination="cLX-LD-oVw" id="oee-Gq-Ipn"/>
+                        <outlet property="label_info" destination="WA2-s6-unZ" id="zqx-Ty-les"/>
+                        <outlet property="label_red" destination="rUU-ru-mcC" id="0k2-0g-vNK"/>
+                        <outlet property="label_xxxx" destination="Kau-st-w11" id="tc7-zH-EJ7"/>
+                        <outlet property="scrollView" destination="bSM-p4-J9E" id="cvM-Gr-shf"/>
+                        <outlet property="tap_clear" destination="BfY-xF-GZW" id="TSi-SO-0mE"/>
+                        <outlet property="text_bj" destination="2n8-pd-rkj" id="S34-i6-IzT"/>
+                        <outlet property="text_ddsj" destination="5Tj-9o-CCv" id="oWA-el-uJ4"/>
+                        <outlet property="text_dhsj" destination="zxq-24-tzA" id="LOS-Fc-kxU"/>
+                        <outlet property="text_hb" destination="SHF-Aw-0J8" id="cw1-zt-1em"/>
+                        <outlet property="text_hpmc" destination="Emr-pU-lpj" id="eNw-kv-HC9"/>
+                        <outlet property="text_introduce" destination="7x3-ej-Ola" id="JF9-jF-M9I"/>
+                        <outlet property="text_sl" destination="bsh-fN-2Um" id="252-jb-nFL"/>
+                        <outlet property="text_xcdd" destination="NrC-he-eKR" id="kDK-Q6-bUv"/>
+                        <outlet property="text_zcdd" destination="vpJ-TE-AC7" id="Zh1-A1-ePb"/>
+                        <outlet property="text_zzl" destination="6D2-Q5-bbe" id="xxx-jx-QVa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OtQ-oB-TyB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="BfY-xF-GZW">
+                    <connections>
+                        <action selector="tap_clear_Click:" destination="P9e-er-tOs" id="jEa-Uq-kZi"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-5133" y="304"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="237-5Y-I0t">
+            <objects>
+                <navigationController id="jaU-fe-otG" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="UTg-QR-d72">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="1" green="0.15495115077288557" blue="0.061484574130497238" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="qPA-Cg-kwf" kind="relationship" relationship="rootViewController" id="fRj-lN-CxM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bfj-sD-NBi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-5927" y="1712"/>
+        </scene>
+        <!--登录-->
+        <scene sceneID="vbs-1N-whH">
+            <objects>
+                <viewController storyboardIdentifier="ZCViewController_DL" id="yC0-nu-D0I" customClass="ZCViewController_DL" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MKA-6M-Usd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="账号，注册时填入的用户名" minimumFontSize="17" id="DLG-gg-EUQ">
+                                <rect key="frame" x="64" y="104" width="236" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="密码，3次机会" minimumFontSize="17" id="dZs-aR-Kgb">
+                                <rect key="frame" x="64" y="157" width="236" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="mLC-93-Dgb">
+                                <rect key="frame" x="16" y="216" width="138" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="注册" backgroundImage="zc_bg.png">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="button_zx_Click:" destination="yC0-nu-D0I" eventType="touchUpInside" id="fct-Sh-2Xw"/>
+                                    <segue destination="WbQ-ar-cC5" kind="push" id="fP3-8Z-7Ms"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Iws-IP-2KB">
+                                <rect key="frame" x="162" y="216" width="138" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="登录" backgroundImage="dl_bg.png">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="button_dl_Click:" destination="yC0-nu-D0I" eventType="touchUpInside" id="KAN-Bt-AdG"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dl_zh.png" id="fzg-ZK-MQL">
+                                <rect key="frame" x="16" y="107" width="35" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dl_mm.png" id="usN-00-n3g">
+                                <rect key="frame" x="16" y="160" width="35" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="CEM-vc-1fy">
+                                <rect key="frame" x="216" y="164" width="76" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="忘记密码？">
+                                    <color key="titleColor" red="0.16007332700892637" green="0.50862962372448983" blue="0.20993604542235206" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="密码输入有误，请重新输入" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Qzg-nn-eCO">
+                                <rect key="frame" x="78" y="465" width="165" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="RcJ-jt-jQu" appends="YES" id="pdE-Op-Ed9"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" title="登录" id="a0u-SJ-Hbe"/>
+                    <connections>
+                        <outlet property="button_dl" destination="Iws-IP-2KB" id="5Ur-e6-CpW"/>
+                        <outlet property="button_zc" destination="mLC-93-Dgb" id="gAX-y0-S5L"/>
+                        <outlet property="label_attention" destination="Qzg-nn-eCO" id="sjB-id-OAi"/>
+                        <outlet property="tap_space" destination="RcJ-jt-jQu" id="FSJ-dC-Oqz"/>
+                        <outlet property="text_mm" destination="dZs-aR-Kgb" id="QFx-Pi-NgS"/>
+                        <outlet property="text_zh" destination="DLG-gg-EUQ" id="AvF-eV-Vr2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Xu-P0-NxJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="RcJ-jt-jQu">
+                    <connections>
+                        <action selector="tap_space_Click:" destination="yC0-nu-D0I" id="1Ik-vv-Nqt"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-5927" y="2508"/>
+        </scene>
+        <!--ZCXD-->
+        <scene sceneID="SEb-Fw-F0W">
+            <objects>
+                <viewController storyboardIdentifier="ZCViewController_Root" id="qPA-Cg-kwf" customClass="ZCViewController_Root" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4tF-zn-fqp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="ZCXD" id="gw9-R6-Hhr">
+                        <barButtonItem key="leftBarButtonItem" title="Menu" id="Nb8-Qp-9td">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="barbutton_menu_Click:" destination="qPA-Cg-kwf" id="Crw-50-c8j"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="hYc-4z-A5t">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="barbutton_search_Click:" destination="qPA-Cg-kwf" id="XOG-vG-h53"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="barbutton_menu" destination="Nb8-Qp-9td" id="VEN-Gs-MIr"/>
+                        <outlet property="barbutton_search" destination="hYc-4z-A5t" id="9d5-9y-XQ5"/>
+                        <outlet property="tap_On_imagelogo_and_labelName" destination="fFQ-IF-K2V" id="dMR-XU-tpH"/>
+                        <outlet property="tap_info" destination="qsE-Rm-kwX" id="8QD-Gx-SId"/>
+                        <outlet property="tap_lableMessage" destination="o98-Vl-9s5" id="pKJ-Pt-DBK"/>
+                        <outlet property="tap_map" destination="1pR-0g-302" id="7MK-AM-Zox"/>
+                        <outlet property="tap_menu_left" destination="U5w-Os-fNi" id="oDs-u7-6pe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ATB-g5-mpC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="1pR-0g-302">
+                    <connections>
+                        <action selector="tap_On_map:" destination="qPA-Cg-kwf" id="sRN-Kv-6on"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="U5w-Os-fNi">
+                    <connections>
+                        <action selector="tap_On_menu_left:" destination="qPA-Cg-kwf" id="B48-io-yBO"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <tapGestureRecognizer id="qsE-Rm-kwX">
+                    <connections>
+                        <action selector="tap_On_info:" destination="qPA-Cg-kwf" id="Hpg-Xu-Upp"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="fFQ-IF-K2V">
+                    <connections>
+                        <action selector="tap_On_imagelogo_and_labelName_Click:" destination="qPA-Cg-kwf" id="eoO-fj-hEz"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="o98-Vl-9s5">
+                    <connections>
+                        <action selector="tap_lableMessage_Click:" destination="qPA-Cg-kwf" id="3Cs-gM-H9u"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-5533" y="1712"/>
+        </scene>
+        <!--查找-->
+        <scene sceneID="54f-b4-iNa">
+            <objects>
+                <viewController storyboardIdentifier="ZCViewController_Search" id="GdL-Hi-3Fn" customClass="ZCViewController_Search" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rUu-v1-O8M">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入出发地址" minimumFontSize="17" id="V2d-nm-le3">
+                                <rect key="frame" x="7" y="82" width="308" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入目的地址" minimumFontSize="17" id="czn-a5-hLF">
+                                <rect key="frame" x="7" y="119" width="308" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="LF4-U3-uF7">
+                                <rect key="frame" x="7" y="168" width="308" height="400"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.96999999999999997" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="查找" id="Atp-6x-okc">
+                        <barButtonItem key="backBarButtonItem" title="123" id="w1n-2P-6GQ"/>
+                        <barButtonItem key="rightBarButtonItem" title="确定" id="3RX-Nf-GVh">
+                            <color key="tintColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="barbutton_submit_Click:" destination="GdL-Hi-3Fn" id="iHg-UE-tjr"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="barbutton_submit" destination="3RX-Nf-GVh" id="tPD-P2-ADC"/>
+                        <outlet property="tap_clear" destination="WyH-4c-pnT" id="Ff7-gj-sBk"/>
+                        <outlet property="text_dst" destination="czn-a5-hLF" id="0am-BC-Syj"/>
+                        <outlet property="text_source" destination="V2d-nm-le3" id="ycP-4O-fVy"/>
+                        <outlet property="tv" destination="LF4-U3-uF7" id="pDU-wb-kl3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IA3-k4-JTh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="WyH-4c-pnT">
+                    <connections>
+                        <action selector="tap_clear_Click:" destination="GdL-Hi-3Fn" id="wB1-8M-IoK"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-5133" y="1712"/>
+        </scene>
+        <!--View ControllerSZGY-->
+        <scene sceneID="mmb-05-OIF">
+            <objects>
+                <viewController storyboardIdentifier="ZCUIViewController_SZ_GY" id="Mdr-hg-LOR" customClass="ZCUIViewController_SZ_GY" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XFL-XB-0yJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="amN-7k-Tfj">
+                                <rect key="frame" x="59" y="178" width="202" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="北京至诚物流迅达" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qJF-2m-md2">
+                                <rect key="frame" x="20" y="256" width="280" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="http://115.28.107.151:8082/t/" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Fav-wx-ENQ">
+                                <rect key="frame" x="30" y="300" width="276" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="iv" destination="amN-7k-Tfj" id="t7y-sV-ipy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ldL-0k-cvH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4668" y="1712"/>
+        </scene>
+        <!--注册-->
+        <scene sceneID="XrM-Nx-DTU">
+            <objects>
+                <viewController id="WbQ-ar-cC5" customClass="ZCViewController_ZC_GRXX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4Gj-NC-38E">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="个人信息" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Wai-EK-hHS">
+                                <rect key="frame" x="16" y="81" width="68" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="1" green="0.15495115079999999" blue="0.061484574129999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="本人真实姓名（必填项）" minimumFontSize="17" id="nXV-rZ-HyQ">
+                                <rect key="frame" x="16" y="110" width="288" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="本人手机号码（必填项）" minimumFontSize="17" id="PEV-7x-cCq">
+                                <rect key="frame" x="16" y="146" width="288" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="本人身份证号（必填项）" minimumFontSize="17" id="UqJ-6F-H79">
+                                <rect key="frame" x="16" y="182" width="288" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="再次输入密码（必填项）" minimumFontSize="17" id="GF7-j6-5XA">
+                                <rect key="frame" x="16" y="273" width="288" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="输入密码，5-16位（必填项）" minimumFontSize="17" id="lSp-1q-W4D">
+                                <rect key="frame" x="16" y="237" width="288" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="tzK-oB-85C">
+                                <rect key="frame" x="16" y="328" width="288" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="下一步" backgroundImage="zc_bg.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="button_next_Click:" destination="WbQ-ar-cC5" eventType="touchUpInside" id="inf-Ng-6BG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.96999999999999997" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="注册" id="9Cv-rQ-iGB"/>
+                    <connections>
+                        <outlet property="button_next" destination="tzK-oB-85C" id="rVg-rR-r32"/>
+                        <outlet property="tap_space" destination="MUM-1U-Uej" id="wV5-yN-YJ5"/>
+                        <outlet property="text_mm" destination="lSp-1q-W4D" id="WH4-iv-Jl5"/>
+                        <outlet property="text_qrmm" destination="GF7-j6-5XA" id="ib3-ge-yf2"/>
+                        <outlet property="text_sfz" destination="UqJ-6F-H79" id="zBR-qb-Ajz"/>
+                        <outlet property="text_sjhm" destination="PEV-7x-cCq" id="rgs-Gv-qkd"/>
+                        <outlet property="text_xm" destination="nXV-rZ-HyQ" id="owW-l9-4IZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YAL-ZJ-mQe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="MUM-1U-Uej">
+                    <connections>
+                        <action selector="tap_space_Click:" destination="WbQ-ar-cC5" id="lMy-ZH-BXs"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-5543" y="2501"/>
+        </scene>
+        <!--注册-->
+        <scene sceneID="rZT-6z-fWA">
+            <objects>
+                <viewController storyboardIdentifier="ZCViewController_ZC_CLXX" id="RIZ-Sq-B0q" customClass="ZCViewController_ZC_CLXX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oBL-DR-p5o">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="车辆信息" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zkW-Ub-59b">
+                                <rect key="frame" x="16" y="81" width="68" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="1" green="0.15495115079999999" blue="0.061484574129999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="挂车车牌号码" minimumFontSize="17" id="Zcl-jF-kI3">
+                                <rect key="frame" x="16" y="146" width="288" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="输入车辆最大载重" minimumFontSize="17" id="hlY-MJ-97D">
+                                <rect key="frame" x="16" y="254" width="288" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="选择车辆的类型" minimumFontSize="17" id="ozE-cM-d2e">
+                                <rect key="frame" x="16" y="182" width="288" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="输入车辆的长度" minimumFontSize="17" id="2ev-mp-D75">
+                                <rect key="frame" x="16" y="218" width="288" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="7gW-gE-Li0">
+                                <rect key="frame" x="16" y="309" width="288" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="确认提交" backgroundImage="zc_bg.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="button_submit_Click:" destination="RIZ-Sq-B0q" eventType="touchUpInside" id="IjX-H8-zD1"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="货车车牌号码" minimumFontSize="17" id="rFB-Lg-hgT">
+                                <rect key="frame" x="16" y="110" width="288" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="KOp-hD-NuM">
+                                <rect key="frame" x="275" y="187" width="25" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="downforward.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="button_showtv_Click:" destination="RIZ-Sq-B0q" eventType="touchUpInside" id="Sec-cb-oQP"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="4bS-Ix-cH3">
+                                <rect key="frame" x="124" y="218" width="180" height="105"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="rVB-6e-6zl">
+                                        <rect key="frame" x="0.0" y="22" width="180" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rVB-6e-6zl" id="j5m-tp-GcJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="180" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.96999999999999997" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="注册" id="PIq-cv-Rh2"/>
+                    <connections>
+                        <outlet property="button_showtv" destination="KOp-hD-NuM" id="G44-Kp-8Ro"/>
+                        <outlet property="button_submit" destination="7gW-gE-Li0" id="9j7-sy-TXZ"/>
+                        <outlet property="tap_space" destination="pCb-su-Quq" id="whS-id-E0G"/>
+                        <outlet property="text_clcd" destination="2ev-mp-D75" id="mz3-Mj-3Ra"/>
+                        <outlet property="text_cllx" destination="ozE-cM-d2e" id="9af-JB-zBY"/>
+                        <outlet property="text_cphm" destination="rFB-Lg-hgT" id="HNo-io-Vde"/>
+                        <outlet property="text_gchm" destination="Zcl-jF-kI3" id="92R-kQ-Cnk"/>
+                        <outlet property="text_zdzc" destination="hlY-MJ-97D" id="4XG-M3-AYd"/>
+                        <outlet property="tv" destination="4bS-Ix-cH3" id="25e-iu-xk6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tTG-Mj-oyO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="pCb-su-Quq">
+                    <connections>
+                        <action selector="tap_space_Click:" destination="RIZ-Sq-B0q" id="Nh5-XX-9gK"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-5127" y="2501"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="dl_bg.png" width="296" height="90"/>
+        <image name="dl_mm.png" width="40" height="40"/>
+        <image name="dl_zh.png" width="40" height="41"/>
+        <image name="downforward.png" width="128" height="128"/>
+        <image name="zc_bg.png" width="296" height="90"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

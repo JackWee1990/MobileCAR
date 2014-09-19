@@ -1,0 +1,37 @@
+ZCXD Update Log
+
+20140830
+
+GOAL
+
+1.SZ
+
+
+20140829
+
+GOAL:
+
+1.info arrow
+2.Menu图标
+3.Search Function
+4.Menu Layout
+5.Menu Bug
+
+
+20140819
+
+GOAL:
+
+1.优化UI——ZCViewController_Root
+
+
+20140815
+
+GOAL:
+
+1.增加设置子菜单关闭手势（左划，单击）
+2.MaMapView当前位置显示
+3.MaMapView注释位置显示
+4.创建显示信息Label
+5.创建显示信息View
+
